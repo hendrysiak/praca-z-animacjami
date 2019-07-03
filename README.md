@@ -1,7 +1,7 @@
 # praca-z-animacjami
 
 > Zadanie nr 3
-W tym zadaniu należy dostarczyć dwie animacje (każda animacja jest osobnym podzadaniem)
+W tym zadaniu należy dostarczyć trzy animacje (każda animacja jest osobnym podzadaniem)
 
 1. Animacja działająca podczas ładowania się contentu strony: Pacman jedzący w nieskończoność trzy kropki. Jeden cykl animacji ma trwać 3 sekundy. Pacman ma być koloru 
 Animację należy wykonać wyłącznie w HTML/CSS (lub preprocesor)
