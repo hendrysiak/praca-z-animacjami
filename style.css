@@ -1,18 +1,53 @@
-.body {
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
-    border-radius: 50%;
-    position: relative;
+.image {
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 500px;
+  transform: translate(-50%, 50%);
+  background-color: yellow;
+  position: relative;
+  background-image: url(./img/1.jpg);
+  background-position: center;
+  background-size: cover;
+  animation-name: slider;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transition: background-image 1s cubic-bezier();
 }
 
-.top {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    position: absolute;
-    border-radius: 50%;
-    clip: rect(25px, 50px, 50px, 25px);
-    z-index: 1;
-    transform: rotate(-45deg)
+@keyframes slider {
+  0% {
+    background-image: url(./img/1.jpg);
+  }
+  16% {
+    background-image: url(./img/1.jpg);
+  }
+  17% {
+    background-image: url(./img/2.jpg);
+  }
+  49% {
+    background-image: url(./img/2.jpg);
+  }
+  50% {
+    background-image: url(./img/3.jpg);
+  }
+  66% {
+    background-image: url(./img/3.jpg);
+  }
+  67% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
 }
